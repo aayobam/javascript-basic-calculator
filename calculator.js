@@ -1,9 +1,9 @@
 //end of program (4)
 function end(){
 
-    let response = prompt("Do you want to continue? type Y for yes or N for No: ").toLowerCase()
+    let response = prompt("Do you want to continue? type Y for yes or N for No: ".toUpperCase()).toLowerCase()
 
-    if (response == "yes".toLowerCase() || response == "y".toLowerCase()){
+    if (response == "yes" || response == "y"){
         main();
     }
 
@@ -13,7 +13,7 @@ function end(){
     }
 
     else{
-        alert("Invalid response, please try again.\n")
+        alert("Invalid response, please try again.\n".toUpperCase())
         end();
     };   
 }
